@@ -1,0 +1,231 @@
+
+.clearfix:before, .clearfix:after {
+	content:" ";
+	display: table;
+
+}
+.clearfix:after{
+	clear: both;
+}
+
+
+#timeline{
+  width: 100%;
+  position: relative;
+  list-style: none;
+  padding: 0;
+
+}
+#timeline a {
+text-decoration: none;
+
+}
+ #timeline:after {
+    content: "";
+    width: 1px;
+    background: 1px #e6e7e9;
+    height: 90%;
+    position: absolute;
+    top: 3em;
+    left: 3em;
+    z-index: 0; }
+#timeline .listing{
+  background-color: white;
+  border: 1px solid #e6e7e9;
+  border-radius: 0.3em;
+  padding: 1em;
+  margin-bottom: 1em;
+  position: relative;
+  z-index: 1;
+  display: table;
+  width: 100%;
+  transition: all .3s ease-in-out;
+
+
+}
+.listing:hover{
+  cursor: pointer;
+  box-shadow: 0px 2px 40px 0 rgba(0,0,0,0.1);
+
+}
+#timeline .listing img,.info,.job_type{
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 0.9em;
+  color: #74718f;
+
+}
+#timeline .image_wrapper{
+  width: 80px;
+  height: 60px;
+  overflow:hidden;
+  margin-left: 10px;
+}
+#timeline .image_wrapper img{
+  width: 80px;
+  display : block;
+  margin : 0 auto;
+  border-radius: 0.25em;
+}
+.info{
+  line-height: 1.25;
+  padding-left: 25px;
+  width: 90%;
+}
+.job_title{
+  font-weight: 700;
+  font-size: 1.5em;
+  color: #34324b;
+}
+
+.course_title{
+  font-weight: 700;
+  font-size: 1.1em;
+  color: #34324b;
+}
+
+.job_info{
+  color:#74718f !important;
+  display: block;
+  margin-bottom: 3px;
+
+
+}
+
+.job_info a{
+  color:#74718f !important;
+}
+
+
+.job_info span{
+  margin: 0 .75em;
+  margin-left: 0;
+}
+
+.course_info{
+  color:#74718f !important;
+  display: block;
+  margin-top: 3px;
+  margin-bottom: 3px;
+
+}
+
+.course_info a{
+  color:#74718f !important;
+}
+
+
+.course_info span{
+  margin: 0 .75em;
+}
+
+.job_type{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.75em;
+  position: relative;
+  white-space: nowrap;
+  padding-top: .6em;
+  width: 100px;
+}
+.job_type:before{
+  content: " ";
+  background-color: #fd7576;
+  width:10px;
+  height: 10px;
+  border-radius: 100%;
+  position: absolute;
+  left:-20px;
+  top:27px;
+}
+.full_time{
+  color: #fd7576;
+
+}
+.full_time:before{
+background-color:#fd7576;
+}
+.part_time{
+  color: #fec85d;
+
+}
+.part_time:before{
+background-color:#fec85d;
+}
+.freelance{
+  color: #4db8de;
+
+}
+.freelance:before{
+background-color:#4db8de;
+}
+.contract{
+  color: #a378fc;
+
+}
+.contract:before{
+background-color:#a378fc;
+}
+
+.companies_projects_list li{
+box-sizing: border-box;
+float: left;
+margin: 0 0 10px;
+width: 25%;}
+
+.color-orange{
+  color: #f05a1a !important;
+}
+
+/* FILTERS */
+
+ul.list-group > li{
+  margin-bottom:10px;
+}
+
+div.projectContainer > label{
+  display:block;
+  margin-left:5px;
+}
+
+div.locationContainer > label{
+  display:block;
+  margin-left:5px;
+}
+
+
+div.ctypeContainer > label{
+  display:block;
+  margin-left:5px;
+}
+
+div.topicContainer > label{
+  display:block;
+  margin-left:5px;
+}
+
+div.titleContainer > input{
+  margin-bottom: 7px;
+  padding-left: 5px;
+
+}
+
+.insti{
+  margin-left:0!important;
+}
+
+.insti-location{
+  background-color: #efefef;
+  padding: 2px 4px;
+  margin-left: 0px !important;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.list-group-item-heading{
+  margin-bottom:10px;
+}
+
+
+
+
